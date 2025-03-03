@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('https://www.example.com/your-history-themed-background.jpg');
+    background-size: cover;
+    color: #140d0d;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #0d0c08;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: #070706;
+}
+
+.article {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.article.show {
+    display: block;
+    opacity: 1;
+}
+
+.image-container {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.image-container img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(7, 6, 6, 0.7);
+    padding: 20px;
+    color: #0a0909;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
